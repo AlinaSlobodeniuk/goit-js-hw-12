@@ -1,0 +1,39 @@
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.gallery-item {
+    border: 1px solid #808080;
+    overflow: hidden;
+}
+
+.gallery-link {
+    display: block;
+}
+
+.gallery-image {
+    display: block;
+    width: 360px;
+    height: 200px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+
+.info-item {
+    color: #2E2F42;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
