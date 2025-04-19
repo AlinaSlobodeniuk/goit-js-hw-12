@@ -17,7 +17,7 @@ import {
 const form = document.querySelector('.form');
 const input = form.querySelector('[name="search-text"]');
 const loadMoreBtn = document.querySelector('.load-more');
-const card = document.querySelector(".gallery-item");
+
 
 let currentPage = 1;
 let currentQuery = '';
@@ -87,7 +87,7 @@ loadMoreBtn.addEventListener('click', async () => {
         } else {
             iziToast.info({
                 title: 'End of results',
-                message: 'This is the end of the search results.',
+                message: "We're sorry, but you've reached the end of search results.",
                 position: 'topRight',
             })
         }
@@ -103,6 +103,7 @@ loadMoreBtn.addEventListener('click', async () => {
 });
 
 function smoothScroll() {
+    const card = document.querySelector(".gallery-item");
     if (card) {
         const cardHeight = card.getBoundingClientRect().height;
         window.scrollBy({
